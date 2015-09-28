@@ -105,3 +105,54 @@
 
 /* index page styles */
 
+html, body{
+    height:100%;
+    width:100%;
+}
+
+.title{
+    position:fixed;
+    display:block;
+    background-color: transparent;
+    margin: 0px auto;
+    margin-top:20%;
+    margin-bottom: 10%;
+    left:10%;
+    right:10%;
+    font-size: 100%;
+    z-index: 100;
+    opacity: 0.3;
+    filter: alpha(opacity=30);
+    padding: 0px;
+}
+
+h1{ color: white;
+    text-shadow: 2px 2px 4px #000000;
+    font-size: 4em;    
+    text-align: center;
+}
+
+.slider{
+width:100%;
+top:0;
+bottom:0px;
+background: transparent;
+text-align: center;
+padding: 0px;
+}
+
+.image {
+    display:block;
+    width:100%;
+    cursor:default;
+    margin: auto 0px;
+}
+
+#container{
+display:block;
+position: fixed;
+padding:0;
+width:100%;
+overflow: hidden;
+list-style: none;
+}
