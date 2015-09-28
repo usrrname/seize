@@ -32,17 +32,26 @@
 <link rel="stylesheet" type="text/css" href="css/slick.css"/>
 <link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
 <style>
+
+.slider{
+padding:50px;
+}
 .nfo
 {
-    position:absolute;
-    top:10%;
-    right:0px;
-    left:0px;
-    margin: 0px auto;
-    padding: 0px;
+padding:10%;
+    text-align: center;
     z-index:102;
-    text-align:center;
-    display:block;
+    overflow:visible;
+    background-repeat:no-repeat;
+}
+#a {height:600px;
+    background-image:url(http://whiteornotquite.com/img/humanae.jpg); background-size: 100%;
+}
+
+#b{ height: 500px; background-image:url(http://whiteornotquite.com/img/race_types.jpg); background-size: 20%; text-align: center;
+}
+
+#c{ height: 400px; background-image:url(http://whiteornotquite.com/img/raceclass.jpg); background-position:50% 50%; background-size: 50%;background-repeat: no-repeat; text-align: center;
 }
 </style>
 </head>
@@ -54,11 +63,11 @@
 <div id = "container">
 
 <div class = "slider">
-    <div class = "nfo" style = "height: 400px; background-image:url(http://whiteornotquite.com/img/angelia_daas.jpg); background-position:50% 50%; background-size: cover ! important; margin: 20px auto;"></div>
+    <div class = "nfo" id = "a" alt = "Angelica Daas, Humanæ 2014"></div>
 
-    <div class = "nfo" style = "height: 800px; background-image:url(http://whiteornotquite.com/img/race_types.jpg); background-position:50% 50%; background-size: cover ! important;"></div>
+    <div class = "nfo" id = "b"></div>
 
-    <div class = "nfo" style = "height: 500px; background-image:url(http://whiteornotquite.com/img/raceclass.jpg); background-position:50% 50%; background-size: cover ! important;"></div>
+    <div class = "nfo" id = "c"></div>
 
     <div class = "nfo" style = "height: 400px; background-image:url(http://whiteornotquite.com/img/slavery.jpg); background-position:10% 10%; background-size: cover ! important;"></div>
 
