@@ -1,5 +1,7 @@
 @charset "UTF-8";
 
+.ghostMixin(@color1,@color2,@height,@fontSize,@radius,@fontFamily,@borderWidth)
+
 // Default Variables
 
 $slick-font-path: "./fonts/" !default;
