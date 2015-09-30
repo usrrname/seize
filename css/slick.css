@@ -5,9 +5,10 @@
   display: inline-block;
   text-decoration: none;
   border: 1px solid #eeeeee;
-  height: 36px;
-  line-height: 36px;
+  height: 2%;
+  line-height: 25px;
   color: #ffffff;
+  margin: 0px auto;
   -webkit-border-radius: 5px;
   -webkit-background-clip: padding-box;
   -moz-border-radius: 5px;
