@@ -3,7 +3,7 @@
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
+<!--[if gt IE 8]><!--> <html> <!--<![endif]-->
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -26,86 +26,87 @@
     <meta name="twitter:image" content="http://www.whiteornotquite.com/img/woman.jpg" />
 
 <meta name="description" content="Where Are You From?">
-
-<link rel="stylesheet" href="css/normalize.min.css"> 
-
+<link rel="stylesheet" type="text/css" href="css/main.css"/>
 <link rel="stylesheet" type="text/css" href="css/slick.css"/>
 <link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
 <style>
-
-.pics
-{
-padding:10%;
-text-align: center;
-z-index:102;
-overflow:visible;
-bottom:10%;
+body{
+    display: grid;
+    grid-template-rows: 250px 1fr auto;
+    grid-auto-flow: dense;
+}
+ul{
+    list-style-type: none;
 }
 
+.pics li{
+    grid-column: span 1;
+    grid-row: span 1;
+    width: 100%;
+    height: auto;
+    margin: 2em 2em;
+    align-content: space-between;
 }
 </style>
 </head>
-
 <body>
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-<div>
-<div class = "title"><h1>ALMOST THE SAME, BUT NOT QUITE</h1></div>
+<h1 class="body_heading">ALMOST THE SAME, BUT NOT QUITE</h1></li>
+<ul>
+<li class = "pics">
+     <img src="img/raceclass.jpg">
+    </li>
 
-<div class = "pics">
-     <img src="img/raceclass.jpg" width="80%"/>
-    </div>
-    
-<div class = "pics">
-    <img src="img/honorary.gif" width="60%">
-    </div>
+<li class = "pics">
+    <img src="img/honorary.gif">
+    </li>
 
-<div class = "pics">
-     <img src="img/mixed.jpg" width="90%"/>
-    </div>
+<li class = "pics">
+     <img src="img/mixed.jpg">
+    </li>
 
-<div class = "pics">
-     <img src="img/spain.jpg" width="60%"/>
-    </div>
+<li class = "pics">
+     <img src="img/spain.jpg">
+    </li>
 
-<div class = "pics">
-<a href="http://humanae.tumblr.com" target = "_blank"><img src = "img/humanae.jpg" width = "80%"></a>
-</div>
+<li class = "pics">
+<a href="http://humanae.tumblr.com" target = "_blank"><img src = "img/humanae.jpg"></a>
+</li>
 
-<div class = "pics">
-     <img src="img/slavery.jpg" width="60%">
-    </div>
+<li class = "pics">
+     <img src="img/slavery.jpg">
+    </li>
 
-    <div class = "pics">
-     <img src="img/nazi.jpg" width="60%">
-    </div>
+    <li class = "pics">
+     <img src="img/nazi.jpg">
+    </li>
 
-<div class = "pics">
-<img src="img/race_types.jpg" width="80%"/>
-    </div>
+<li class = "pics">
+<img src="img/race_types.jpg">
+    </li>
 
-<div class = "pics">
-    <img src="img/types_of_mankind.jpg" width="100%"/>
-    </div>
+<li class = "pics">
+    <img src="img/types_of_mankind.jpg" >
+    </li>
 
-<div class = "pics">
-   <a href="http://lightskinordarkskin.com" target = "_blank"> <img src = "img/lightskinordarkskin.jpg" width ="90%"/></a></div>
+<li class = "pics">
+   <a href="http://lightskinordarkskin.com" target = "_blank"> <img src = "img/lightskinordarkskin.jpg"/></a></li>
 
-<div class = "pics">
-<a href="http://www.lordeinc.com/" target = "_blank"><img src = "img/lordeinc.jpg" width ="90%"/></a></div>
+<li class = "pics">
+<a href="http://www.lordeinc.com/" target = "_blank"><img src = "img/lordeinc.jpg"/></a></li>
 
-<div class = "pics">
-     <img src="img/caste.jpg" width="80%"/>
-    </div>
-<div class = "pics">
-     <img src="img/reply.jpg" width="90%">
-    </div>
-<div class = "pics">
-     <img src="img/sdt.jpg" width="75%"/>
-    </div>
-
-</div>
+<li class = "pics">
+     <img src="img/caste.jpg">
+    </li>
+<li class = "pics">
+     <img src="img/reply.jpg">
+    </li>
+<li class = "pics">
+     <img src="img/sdt.jpg">
+    </li>
+</ul>
 <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 <script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 <script type="text/javascript" src="js/slick.min.js"></script>

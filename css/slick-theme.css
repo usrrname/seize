@@ -20,19 +20,11 @@
 .slick-next
 {
     font-size: xx-large;
-    line-height: 1;
-    position: fixed;
-    top: 35%;
-    display: block;
-    width:25px;
-    height: 0%;
-    padding: 0;
     cursor: pointer;
     color: transparent;
     border: none;
     outline: none;
     background: transparent;
-    z-index: 101;
 }
 .slick-prev:hover,
 .slick-prev:focus,
@@ -66,10 +58,12 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
-
 .slick-prev
-{
-    left: 1%;
+{   
+    justify-self: left;
+    align-self: center;
+    position: absolute;
+    z-index: 110;
 }
 [dir='rtl'] .slick-prev
 {
@@ -86,9 +80,13 @@
 }
 
 .slick-next
-{
-    right: 2%;
+{  
+    justify-self: right;
+    align-self: center;
+    position: absolute;
+    z-index: 110;
 }
+
 [dir='rtl'] .slick-next
 {
     right: auto;
@@ -103,56 +101,17 @@
     content: '←';
 }
 
-/* index page styles */
-
-html, body{
-    height:100%;
-    width:100%;
-}
-
-.title{
-    position:fixed;
-    display:block;
-    background-color: transparent;
-    margin: 0px auto;
-    margin-top:20%;
-    margin-bottom: 10%;
-    left:10%;
-    right:10%;
-    font-size: 100%;
-    z-index: 100;
-    opacity: 0.3;
-    filter: alpha(opacity=30);
-    padding: 0px;
-}
-
-h1{ color: white;
-    text-shadow: 2px 2px 4px #000000;
-    font-size: 4em;    
-    text-align: center;
-}
-
-.slider{
+.slider {
+display:grid;
 width:100%;
-top:0;
-bottom:0px;
+height: 100%;
+padding:0;
+margin: 0;
 background: transparent;
-text-align: center;
-padding: 0px;
+overflow: visible;
 }
 
 .image {
-    display:block;
-    width:100%;
-    cursor:default;
-    margin: auto 0px;
-}
-
-#container{
-display:block;
-position: fixed;
-padding:0;
-width:100%;
-overflow: hidden;
-list-style: none;
+    display: inline-block;
+    background-size: 110%;
 }
