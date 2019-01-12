@@ -15,15 +15,15 @@
     <!-- for Facebook -->          
     <meta property="og:title" content="WHITE OR NOT QUITE?" />
     <meta property="og:type" content="website"/>
-    <meta property="og:image" content="http://www.whiteornotquite.com/img/woman.jpg" />
-    <meta property="og:url" content="http://www.whiteornotquite.com"/>
+    <meta property="og:image" content="https://www.whiteornotquite.com/img/woman.jpg" />
+    <meta property="og:url" content="https://www.whiteornotquite.com"/>
     <meta property="og:description" content="Where are you from?" />
 
     <!-- for Twitter -->          
     <meta name="twitter:card" content="WHITE OR NOT QUITE" />
     <meta name="twitter:title" content="WHITE OR NOT QUITE" />
     <meta name="twitter:description" content="Where are you from?" />
-    <meta name="twitter:image" content="http://www.whiteornotquite.com/img/woman.jpg" />
+    <meta name="twitter:image" content="https://www.whiteornotquite.com/img/woman.jpg" />
 
 <meta name="description" content="Where Are You From?">
 <link rel="stylesheet" type="text/css" href="css/main.css"/>
@@ -31,88 +31,100 @@
 <link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
 <style>
 body{
-    display: grid;
-    grid-template-rows: 250px 1fr auto;
-    grid-auto-flow: dense;
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
 }
-ul{
+@media all and (min-width: 780px){
+.site__ul_img--grid{
+    align-self: flex-start;
+    display: inline-grid;
+    grid-template-columns: repeat(4, 300px);
+    grid-template-rows: repeat (4, 30%);
+    grid-auto-flow: row;
+    grid-gap: 1em;
     list-style-type: none;
+    overflow:hide;
 }
 
-.pics li{
-    grid-column: span 1;
-    grid-row: span 1;
+.site__ul__img{
+    display: block;
+    align-content: space-evenly;
+    user-zoom: 1;
+    padding: 1em;
+    align-self: auto;
+    justify-content: center stretch;
     width: 100%;
     height: auto;
-    margin: 2em 2em;
-    align-content: space-between;
+    align-content: flex-start;
 }
+}
+
 </style>
 </head>
 <body>
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-<h1 class="body_heading">ALMOST THE SAME, BUT NOT QUITE</h1></li>
-<ul>
-<li class = "pics">
-     <img src="img/raceclass.jpg">
+<h1 class="body_heading">ALMOST THE SAME, BUT NOT QUITE</h1>
+<ul class="site__ul_img--grid">
+<li>
+     <img class = "site__ul__img" src="img/raceclass.jpg">
     </li>
 
-<li class = "pics">
-    <img src="img/honorary.gif">
+<li>
+    <img class = "site__ul__img" src="img/honorary.gif">
+</li>
+<li>
+     <img class = "site__ul__img"src="img/mixed.jpg">
     </li>
 
-<li class = "pics">
-     <img src="img/mixed.jpg">
+<li>
+     <img class = "site__ul__img" src="img/spain.jpg">
     </li>
 
-<li class = "pics">
-     <img src="img/spain.jpg">
-    </li>
-
-<li class = "pics">
-<a href="http://humanae.tumblr.com" target = "_blank"><img src = "img/humanae.jpg"></a>
+<li>
+<a href="https://humanae.tumblr.com" target = "_blank"><img src="img/humanae.jpg" class = "site__ul__img"></a>
 </li>
 
-<li class = "pics">
-     <img src="img/slavery.jpg">
+<li>
+     <img class = "site__ul__img" src="img/slavery.jpg">
     </li>
 
-    <li class = "pics">
-     <img src="img/nazi.jpg">
+    <li>
+     <img class = "site__ul__img" src="img/nazi.jpg">
     </li>
 
-<li class = "pics">
-<img src="img/race_types.jpg">
+<li>
+<img class = "site__ul__img" src="img/race_types.jpg">
     </li>
 
-<li class = "pics">
-    <img src="img/types_of_mankind.jpg" >
+<li>
+    <img class = "site__ul__img" src="img/types_of_mankind.jpg" >
     </li>
 
-<li class = "pics">
-   <a href="http://lightskinordarkskin.com" target = "_blank"> <img src = "img/lightskinordarkskin.jpg"/></a></li>
+<li>
+   <a href="https://lightskinordarkskin.com" target = "_blank"> <img class = "site__ul__img" src = "img/lightskinordarkskin.jpg"/></a></li>
 
-<li class = "pics">
-<a href="http://www.lordeinc.com/" target = "_blank"><img src = "img/lordeinc.jpg"/></a></li>
+<li>
+<a href="https://www.lordeinc.com/" target = "_blank"><img class = "site__ul__img" src = "img/lordeinc.jpg"/></a></li>
 
-<li class = "pics">
-     <img src="img/caste.jpg">
+<li>
+     <img class = "site__ul__img" src="img/caste.jpg">
     </li>
-<li class = "pics">
-     <img src="img/reply.jpg">
+<li>
+     <img class = "site__ul__img" src="img/reply.jpg">
     </li>
-<li class = "pics">
-     <img src="img/sdt.jpg">
+<li>
+     <img class = "site__ul__img" src="img/sdt.jpg">
     </li>
 </ul>
-<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
-<script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 <script type="text/javascript" src="js/slick.min.js"></script>
-
-
-    </body>
+</body>
 
 <script type="text/javascript" src="js/slick.js"></script>
 </html>
